@@ -9,8 +9,14 @@ app.use(cors());
 app.use(express());
 
 
+const toyGallery = require('./data/toy_img.json');
+
 app.get('/' , (req,res) => {
     res.send('Toy Shop Server is Running.');
+});
+
+app.get('/gallery' , (req,res) => {
+    res.send(toyGallery);
 });
 
 
