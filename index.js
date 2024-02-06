@@ -10,19 +10,6 @@ app.use(cors());
 app.use(express.json());
 
 
-const toyGallery = require('./data/toy_img.json');
-
-app.get('/' , (req,res) => {
-    res.send('Toy Shop Server is Running.');
-});
-
-app.get('/gallery' , (req,res) => {
-    res.send(toyGallery);
-});
-
-
-
-
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.6khd2rb.mongodb.net/?retryWrites=true&w=majority`;
 
 
@@ -40,9 +27,18 @@ async function run() {
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
 
+    const galleryCollection = client.db("toyDB").collection("toyGallery");
 
-
-
+    // Gallery
+    app.get('/gallery' , async(req,res) => {
+        try {
+            const result = await galleryCollection.find().limit(21).toArray();
+            res.send(result);
+        } catch (error) {
+            console.error(error);
+            res.status(500).json({ message: 'Server Error' });
+        }
+    });
 
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
