@@ -1,0 +1,642 @@
+[
+  {
+    "ID": 1,
+    "title": "Spider-Man",
+    "price": 19.99,
+    "ratings": 4.5,
+    "details": "Highly detailed Spider-Man action figure with multiple points of articulation.",
+    "discountPrice": 16.99,
+    "imgLink": "https://i.ibb.co/hyZbQ1z/5.jpg",
+    "availableQuantity": 50,
+    "category": "Marvel",
+    "seller": {
+      "name": "Peter Parker",
+      "email": "peterparker@example.com",
+      "sellerID": 1001
+    }
+  },
+  {
+    "ID": 2,
+    "title": "Iron Man",
+    "price": 24.99,
+    "ratings": 4.7,
+    "details": "Authentic Iron Man action figure with interchangeable parts.",
+    "discountPrice": 21.99,
+    "imgLink": "https://i.ibb.co/5sn1dRX/11.jpg",
+    "availableQuantity": 40,
+    "category": "Marvel",
+    "seller": {
+      "name": "Tony Stark",
+      "email": "tonystark@example.com",
+      "sellerID": 1002
+    }
+  },
+  {
+    "ID": 3,
+    "title": "Captain America",
+    "price": 21.99,
+    "ratings": 4.6,
+    "details": "Classic Captain America action figure with shield accessory.",
+    "discountPrice": 18.99,
+    "imgLink": "https://i.ibb.co/ZX7fBkd/15.jpg",
+    "availableQuantity": 35,
+    "category": "Marvel",
+    "seller": {
+      "name": "Steve Rogers",
+      "email": "steverogers@example.com",
+      "sellerID": 1003
+    }
+  },
+  {
+    "ID": 4,
+    "title": "Thor",
+    "price": 29.99,
+    "ratings": 4.8,
+    "details": "Mighty Thor action figure with Mjolnir hammer.",
+    "discountPrice": 25.99,
+    "imgLink": "https://i.ibb.co/9n18hmB/6.jpg",
+    "availableQuantity": 30,
+    "category": "Marvel",
+    "seller": {
+      "name": "Jane Foster",
+      "email": "janefoster@example.com",
+      "sellerID": 1004
+    }
+  },
+  {
+    "ID": 5,
+    "title": "Hulk",
+    "price": 34.99,
+    "ratings": 4.9,
+    "details": "Incredible Hulk action figure with smashing action.",
+    "discountPrice": 29.99,
+    "imgLink": "https://i.ibb.co/vY1sXhZ/4.jpg",
+    "availableQuantity": 25,
+    "category": "Marvel",
+    "seller": {
+      "name": "Bruce Banner",
+      "email": "brucebanner@example.com",
+      "sellerID": 1005
+    }
+  },
+  {
+    "ID": 6,
+    "title": "Black Widow",
+    "price": 22.99,
+    "ratings": 4.5,
+    "details": "Sleek Black Widow action figure with espionage gear.",
+    "discountPrice": 19.99,
+    "imgLink": "https://i.ibb.co/PgGyCSV/22.jpg",
+    "availableQuantity": 40,
+    "category": "Marvel",
+    "seller": {
+      "name": "Natasha Romanoff",
+      "email": "natasharomanoff@example.com",
+      "sellerID": 1006
+    }
+  },
+  {
+    "ID": 7,
+    "title": "Wolverine",
+    "price": 26.99,
+    "ratings": 4.7,
+    "details": "Fierce Wolverine action figure with retractable claws.",
+    "discountPrice": 23.99,
+    "imgLink": "https://i.ibb.co/RgscDrt/3.jpg",
+    "availableQuantity": 35,
+    "category": "Marvel",
+    "seller": {
+      "name": "Logan",
+      "email": "logan@example.com",
+      "sellerID": 1007
+    }
+  },
+  {
+    "ID": 8,
+    "title": "Doctor Strange",
+    "price": 31.99,
+    "ratings": 4.6,
+    "details": "Mystical Doctor Strange action figure with spell-casting hands.",
+    "discountPrice": 28.99,
+    "imgLink": "https://i.ibb.co/xqWb8MS/23.jpg",
+    "availableQuantity": 30,
+    "category": "Marvel",
+    "seller": {
+      "name": "Stephen Strange",
+      "email": "stephenstrange@example.com",
+      "sellerID": 1008
+    }
+  },
+  {
+    "ID": 9,
+    "title": "Black Panther",
+    "price": 27.99,
+    "ratings": 4.7,
+    "details": "Regal Black Panther action figure with vibranium suit.",
+    "discountPrice": 24.99,
+    "imgLink": "https://i.ibb.co/fnYw0f6/13.jpg",
+    "availableQuantity": 35,
+    "category": "Marvel",
+    "seller": {
+      "name": "T'Challa",
+      "email": "tchalla@example.com",
+      "sellerID": 1009
+    }
+  },
+  {
+    "ID": 10,
+    "title": "Deadpool",
+    "price": 23.99,
+    "ratings": 4.5,
+    "details": "Humorous Deadpool action figure with katanas and chimichanga accessory.",
+    "discountPrice": 20.99,
+    "imgLink": "https://i.ibb.co/WsmqzCf/12.jpg",
+    "availableQuantity": 40,
+    "category": "Marvel",
+    "seller": {
+      "name": "Wade Wilson",
+      "email": "wadewilson@example.com",
+      "sellerID": 1010
+    }
+  },
+  {
+    "ID": 11,
+    "title": "Batman",
+    "price": 29.99,
+    "ratings": 4.6,
+    "details": "Dark Knight Batman action figure with utility belt and Batarang.",
+    "discountPrice": 26.99,
+    "imgLink": "https://i.ibb.co/Gt08Lmk/7.jpg",
+    "availableQuantity": 45,
+    "category": "DC Comics",
+    "seller": {
+      "name": "Bruce Wayne",
+      "email": "brucewayne@example.com",
+      "sellerID": 1101
+    }
+  },
+  {
+    "ID": 12,
+    "title": "Superman",
+    "price": 32.99,
+    "ratings": 4.8,
+    "details": "Powerful Superman action figure with flowing cape.",
+    "discountPrice": 29.99,
+    "imgLink": "https://i.ibb.co/6YfHjwc/2.jpg",
+    "availableQuantity": 40,
+    "category": "DC Comics",
+    "seller": {
+      "name": "Clark Kent",
+      "email": "clarkkent@example.com",
+      "sellerID": 1102
+    }
+  },
+  {
+    "ID": 13,
+    "title": "Wonder Woman",
+    "price": 27.99,
+    "ratings": 4.7,
+    "details": "Amazonian Wonder Woman action figure with Lasso of Truth.",
+    "discountPrice": 24.99,
+    "imgLink": "https://i.ibb.co/TBJjyFg/24.jpg",
+    "availableQuantity": 35,
+    "category": "DC Comics",
+    "seller": {
+      "name": "Diana Prince",
+      "email": "dianaprince@example.com",
+      "sellerID": 1103
+    }
+  },
+  {
+    "ID": 14,
+    "title": "Flash",
+    "price": 25.99,
+    "ratings": 4.5,
+    "details": "Fastest man alive Flash action figure with lightning bolts.",
+    "discountPrice": 22.99,
+    "imgLink": "https://i.ibb.co/0QQJt3m/25.jpg",
+    "availableQuantity": 30,
+    "category": "DC Comics",
+    "seller": {
+      "name": "Barry Allen",
+      "email": "barryallen@example.com",
+      "sellerID": 1104
+    }
+  },
+  {
+    "ID": 15,
+    "title": "Aquaman",
+    "price": 28.99,
+    "ratings": 4.6,
+    "details": "King of Atlantis Aquaman action figure with trident.",
+    "discountPrice": 25.99,
+    "imgLink": "https://i.ibb.co/Tqbpsq1/1.jpg",
+    "availableQuantity": 35,
+    "category": "DC Comics",
+    "seller": {
+      "name": "Arthur Curry",
+      "email": "arthurcurry@example.com",
+      "sellerID": 1105
+    }
+  },
+  {
+    "ID": 16,
+    "title": "Green Lantern",
+    "price": 30.99,
+    "ratings": 4.7,
+    "details": "Emerald Crusader Green Lantern action figure with power ring.",
+    "discountPrice": 27.99,
+    "imgLink": "https://i.ibb.co/sHWyRXw/26.jpg",
+    "availableQuantity": 40,
+    "category": "DC Comics",
+    "seller": {
+      "name": "Hal Jordan",
+      "email": "haljordan@example.com",
+      "sellerID": 1106
+    }
+  },
+  {
+    "ID": 17,
+    "title": "Cyborg",
+    "price": 26.99,
+    "ratings": 4.5,
+    "details": "Half-man, half-machine Cyborg action figure with cybernetic enhancements.",
+    "discountPrice": 23.99,
+    "imgLink": "https://i.ibb.co/5KH9Nqk/27.jpg",
+    "availableQuantity": 35,
+    "category": "DC Comics",
+    "seller": {
+      "name": "Victor Stone",
+      "email": "victorstone@example.com",
+      "sellerID": 1107
+    }
+  },
+  {
+    "ID": 18,
+    "title": "Green Arrow",
+    "price": 23.99,
+    "ratings": 4.6,
+    "details": "Sharpshooter Green Arrow action figure with bow and trick arrows.",
+    "discountPrice": 20.99,
+    "imgLink": "https://i.ibb.co/tXnzd7s/28.jpg",
+    "availableQuantity": 30,
+    "category": "DC Comics",
+    "seller": {
+      "name": "Oliver Queen",
+      "email": "oliverqueen@example.com",
+      "sellerID": 1108
+    }
+  },
+  {
+    "ID": 19,
+    "title": "Martian Manhunter",
+    "price": 28.99,
+    "ratings": 4.7,
+    "details": "Powerful Martian Manhunter action figure with shapeshifting abilities.",
+    "discountPrice": 25.99,
+    "imgLink": "https://i.ibb.co/HYbvVBv/29.jpg",
+    "availableQuantity": 35,
+    "category": "DC Comics",
+    "seller": {
+      "name": "J'onn J'onzz",
+      "email": "jonnjonnz@example.com",
+      "sellerID": 1109
+    }
+  },
+  {
+    "ID": 20,
+    "title": "Shazam",
+    "price": 31.99,
+    "ratings": 4.6,
+    "details": "Mighty Shazam action figure with lightning bolt magic.",
+    "discountPrice": 28.99,
+    "imgLink": "https://i.ibb.co/8z88bpC/30.jpg",
+    "availableQuantity": 30,
+    "category": "DC Comics",
+    "seller": {
+      "name": "Billy Batson",
+      "email": "billybatson@example.com",
+      "sellerID": 1110
+    }
+  },
+  {
+    "ID": 21,
+    "title": "Optimus Prime",
+    "price": 39.99,
+    "ratings": 4.8,
+    "details": "Iconic Optimus Prime action figure with transformable features.",
+    "discountPrice": 35.99,
+    "imgLink": "https://i.ibb.co/cx99Pkk/31.jpg",
+    "availableQuantity": 50,
+    "category": "Transformers",
+    "seller": {
+      "name": "Autobot Alliance",
+      "email": "autobotalliance@example.com",
+      "sellerID": 2101
+    }
+  },
+  {
+    "ID": 22,
+    "title": "Bumblebee",
+    "price": 29.99,
+    "ratings": 4.6,
+    "details": "Energetic Bumblebee action figure with vehicle mode.",
+    "discountPrice": 26.99,
+    "imgLink": "https://i.ibb.co/yNDGmYW/32.jpg",
+    "availableQuantity": 45,
+    "category": "Transformers",
+    "seller": {
+      "name": "Bumblebee Brotherhood",
+      "email": "bumblebeebrotherhood@example.com",
+      "sellerID": 2102
+    }
+  },
+  {
+    "ID": 23,
+    "title": "Megatron",
+    "price": 34.99,
+    "ratings": 4.7,
+    "details": "Power-hungry Megatron action figure with fusion cannon.",
+    "discountPrice": 30.99,
+    "imgLink": "https://i.ibb.co/WyCxSZg/33.jpg",
+    "availableQuantity": 40,
+    "category": "Transformers",
+    "seller": {
+      "name": "Decepticon Dominion",
+      "email": "decepticondominion@example.com",
+      "sellerID": 2103
+    }
+  },
+  {
+    "ID": 24,
+    "title": "Starscream",
+    "price": 32.99,
+    "ratings": 4.5,
+    "details": "Scheming Starscream action figure with jet mode.",
+    "discountPrice": 29.99,
+    "imgLink": "https://i.ibb.co/xG1LvxF/34.jpg",
+    "availableQuantity": 35,
+    "category": "Transformers",
+    "seller": {
+      "name": "Seeker Squadron",
+      "email": "seekersquadron@example.com",
+      "sellerID": 2104
+    }
+  },
+  {
+    "ID": 25,
+    "title": "Soundwave",
+    "price": 28.99,
+    "ratings": 4.6,
+    "details": "Loyal Soundwave action figure with cassette minions.",
+    "discountPrice": 25.99,
+    "imgLink": "https://i.ibb.co/HHw5PdR/35.jpg",
+    "availableQuantity": 40,
+    "category": "Transformers",
+    "seller": {
+      "name": "Decepticon Legion",
+      "email": "decepticonlegion@example.com",
+      "sellerID": 2105
+    }
+  },
+  {
+    "ID": 26,
+    "title": "Grimlock",
+    "price": 37.99,
+    "ratings": 4.7,
+    "details": "Mighty Grimlock action figure with Dinobot mode.",
+    "discountPrice": 33.99,
+    "imgLink": "https://i.ibb.co/mhQmjV0/36.jpg",
+    "availableQuantity": 35,
+    "category": "Transformers",
+    "seller": {
+      "name": "Dinobot Dynasty",
+      "email": "dinobotdynasty@example.com",
+      "sellerID": 2106
+    }
+  },
+  {
+    "ID": 27,
+    "title": "Shockwave",
+    "price": 31.99,
+    "ratings": 4.6,
+    "details": "Calculating Shockwave action figure with laser cannon arm.",
+    "discountPrice": 28.99,
+    "imgLink": "https://i.ibb.co/QXfcNHm/37.jpg",
+    "availableQuantity": 40,
+    "category": "Transformers",
+    "seller": {
+      "name": "Decepticon Dominance",
+      "email": "decepticondominance@example.com",
+      "sellerID": 2107
+    }
+  },
+  {
+    "ID": 28,
+    "title": "Optimus Primal",
+    "price": 36.99,
+    "ratings": 4.7,
+    "details": "Noble Optimus Primal action figure with beast mode.",
+    "discountPrice": 32.99,
+    "imgLink": "https://i.ibb.co/0XzgC0M/38.jpg",
+    "availableQuantity": 35,
+    "category": "Transformers",
+    "seller": {
+      "name": "Maximal Alliance",
+      "email": "maximalalliance@example.com",
+      "sellerID": 2108
+    }
+  },
+  {
+    "ID": 29,
+    "title": "Arcee",
+    "price": 27.99,
+    "ratings": 4.6,
+    "details": "Skilled Arcee action figure with agile movements.",
+    "discountPrice": 24.99,
+    "imgLink": "https://i.ibb.co/vscSSTh/39.jpg",
+    "availableQuantity": 35,
+    "category": "Transformers",
+    "seller": {
+      "name": "Autobot Alliance",
+      "email": "autobotalliance@example.com",
+      "sellerID": 2109
+    }
+  },
+  {
+    "ID": 30,
+    "title": "Optimus Maximus",
+    "price": 40.99,
+    "ratings": 4.8,
+    "details": "Mighty Optimus Maximus action figure with combined form.",
+    "discountPrice": 36.99,
+    "imgLink": "https://i.ibb.co/By5Rzwp/40.jpg",
+    "availableQuantity": 40,
+    "category": "Transformers",
+    "seller": {
+      "name": "Autobot Alliance",
+      "email": "autobotalliance@example.com",
+      "sellerID": 2110
+    }
+  },
+  {
+    "ID": 31,
+    "title": "Darth Vader",
+    "price": 39.99,
+    "ratings": 4.8,
+    "details": "Iconic Darth Vader action figure with lightsaber accessory.",
+    "discountPrice": 35.99,
+    "imgLink": "https://i.ibb.co/ZBtqP6v/41.jpg",
+    "availableQuantity": 50,
+    "category": "Star Wars",
+    "seller": {
+      "name": "Dark Side Collectibles",
+      "email": "darksidecollectibles@example.com",
+      "sellerID": 3101
+    }
+  },
+  {
+    "ID": 32,
+    "title": "Luke Skywalker",
+    "price": 29.99,
+    "ratings": 4.6,
+    "details": "Legendary Luke Skywalker action figure with lightsaber.",
+    "discountPrice": 26.99,
+    "imgLink": "https://i.ibb.co/D167wnh/42.jpg",
+    "availableQuantity": 45,
+    "category": "Star Wars",
+    "seller": {
+      "name": "Rebel Alliance Emporium",
+      "email": "rebelallianceemporium@example.com",
+      "sellerID": 3102
+    }
+  },
+  {
+    "ID": 33,
+    "title": "Princess Leia",
+    "price": 34.99,
+    "ratings": 4.7,
+    "details": "Regal Princess Leia action figure with blaster pistol.",
+    "discountPrice": 30.99,
+    "imgLink": "https://i.ibb.co/4R42bR4/43.jpg",
+    "availableQuantity": 40,
+    "category": "Star Wars",
+    "seller": {
+      "name": "Rebel Alliance Emporium",
+      "email": "rebelallianceemporium@example.com",
+      "sellerID": 3103
+    }
+  },
+  {
+    "ID": 34,
+    "title": "Han Solo",
+    "price": 32.99,
+    "ratings": 4.5,
+    "details": "Smuggler Han Solo action figure with blaster pistol.",
+    "discountPrice": 29.99,
+    "imgLink": "https://i.ibb.co/f92LYgy/44.jpg",
+    "availableQuantity": 35,
+    "category": "Star Wars",
+    "seller": {
+      "name": "Smuggler's Cove",
+      "email": "smugglerscove@example.com",
+      "sellerID": 3104
+    }
+  },
+  {
+    "ID": 35,
+    "title": "Yoda",
+    "price": 28.99,
+    "ratings": 4.6,
+    "details": "Wise Yoda action figure with cane and Force powers.",
+    "discountPrice": 25.99,
+    "imgLink": "https://i.ibb.co/ZGvWP37/45.jpg",
+    "availableQuantity": 40,
+    "category": "Star Wars",
+    "seller": {
+      "name": "Jedi Archives",
+      "email": "jediarchives@example.com",
+      "sellerID": 3105
+    }
+  },
+  {
+    "ID": 36,
+    "title": "Obi-Wan Kenobi",
+    "price": 37.99,
+    "ratings": 4.7,
+    "details": "Noble Obi-Wan Kenobi action figure with lightsaber.",
+    "discountPrice": 33.99,
+    "imgLink": "https://i.ibb.co/6mRRGdH/46.jpg",
+    "availableQuantity": 35,
+    "category": "Star Wars",
+    "seller": {
+      "name": "Jedi Archives",
+      "email": "jediarchives@example.com",
+      "sellerID": 3106
+    }
+  },
+  {
+    "ID": 37,
+    "title": "Chewbacca",
+    "price": 31.99,
+    "ratings": 4.6,
+    "details": "Fierce Chewbacca action figure with bowcaster.",
+    "discountPrice": 28.99,
+    "imgLink": "https://i.ibb.co/SKXFyMK/47.jpg",
+    "availableQuantity": 40,
+    "category": "Star Wars",
+    "seller": {
+      "name": "Wookiee Emporium",
+      "email": "wookieeemporium@example.com",
+      "sellerID": 3107
+    }
+  },
+  {
+    "ID": 38,
+    "title": "R2-D2",
+    "price": 36.99,
+    "ratings": 4.7,
+    "details": "Brave R2-D2 action figure with holographic projector.",
+    "discountPrice": 32.99,
+    "imgLink": "https://i.ibb.co/W56nxqH/48.jpg",
+    "availableQuantity": 35,
+    "category": "Star Wars",
+    "seller": {
+      "name": "Droid Depot",
+      "email": "droiddepot@example.com",
+      "sellerID": 3108
+    }
+  },
+  {
+    "ID": 39,
+    "title": "Darth Maul",
+    "price": 27.99,
+    "ratings": 4.6,
+    "details": "Sinister Darth Maul action figure with double-bladed lightsaber.",
+    "discountPrice": 24.99,
+    "imgLink": "https://i.ibb.co/3SqFN43/49.jpg",
+    "availableQuantity": 35,
+    "category": "Star Wars",
+    "seller": {
+      "name": "Dark Side Collectibles",
+      "email": "darksidecollectibles@example.com",
+      "sellerID": 3109
+    }
+  },
+  {
+    "ID": 40,
+    "title": "Kylo Ren",
+    "price": 40.99,
+    "ratings": 4.8,
+    "details": "Intimidating Kylo Ren action figure with crossguard lightsaber.",
+    "discountPrice": 36.99,
+    "imgLink": "https://i.ibb.co/cL6W8bb/20.jpg",
+    "availableQuantity": 40,
+    "category": "Star Wars",
+    "seller": {
+      "name": "First Order Emporium",
+      "email": "firstorderemporium@example.com",
+      "sellerID": 3110
+    }
+  }
+]

@@ -28,11 +28,23 @@ async function run() {
     await client.connect();
 
     const galleryCollection = client.db("toyDB").collection("toyGallery");
+    const productCollection = client.db('toyDB').collection('toyProducts');
 
     // Gallery
     app.get('/gallery' , async(req,res) => {
         try {
             const result = await galleryCollection.find().limit(21).toArray();
+            res.send(result);
+        } catch (error) {
+            console.error(error);
+            res.status(500).json({ message: 'Server Error' });
+        }
+    });
+
+    // Product
+    app.get('/products' , async(req,res) => {
+        try {
+            const result = await productCollection.find().toArray();
             res.send(result);
         } catch (error) {
             console.error(error);
