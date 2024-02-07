@@ -52,6 +52,16 @@ async function run() {
         }
     });
 
+    app.get('/marvel' , async(req,res) => {
+        try {
+            const marvelData = await productCollection.find({category : 'Marvel'}).toArray();
+            res.send(marvelData);
+        } catch (error) {
+            console.error('Error fetching Marvel data:', error);
+            res.status(500).json({ error: 'Internal Server Error' });
+        }
+    });
+
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
