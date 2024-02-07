@@ -52,10 +52,22 @@ async function run() {
         }
     });
 
+    // Marvel Api:-
     app.get('/marvel' , async(req,res) => {
         try {
             const marvelData = await productCollection.find({category : 'Marvel'}).toArray();
             res.send(marvelData);
+        } catch (error) {
+            console.error('Error fetching Marvel data:', error);
+            res.status(500).json({ error: 'Internal Server Error' });
+        }
+    });
+
+    // DC Comics Api:-
+    app.get('/dc-comics' , async(req,res) => {
+        try {
+            const dcData = await productCollection.find({category : 'DC Comics'}).toArray();
+            res.send(dcData);
         } catch (error) {
             console.error('Error fetching Marvel data:', error);
             res.status(500).json({ error: 'Internal Server Error' });
