@@ -85,6 +85,17 @@ async function run() {
         }
     });
 
+    // Star Wars Api:-
+    app.get('/star-wars' , async(req,res) => {
+        try {
+            const starWarsData = await productCollection.find({category : 'Star Wars'}).toArray();
+            res.send(starWarsData);
+        } catch (error) {
+            console.error('Error fetching Marvel data:', error);
+            res.status(500).json({ error: 'Internal Server Error' });
+        }
+    });
+
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
