@@ -74,6 +74,17 @@ async function run() {
         }
     });
 
+    // Transformers Api:-
+    app.get('/transformers' , async(req,res) => {
+        try {
+            const transformersData = await productCollection.find({category : 'Transformers'}).toArray();
+            res.send(transformersData);
+        } catch (error) {
+            console.error('Error fetching Marvel data:', error);
+            res.status(500).json({ error: 'Internal Server Error' });
+        }
+    });
+
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
