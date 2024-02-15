@@ -3,7 +3,7 @@ require("dotenv").config();
 const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 5000;
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 
 // middleware
 app.use(cors());
@@ -49,6 +49,27 @@ async function run() {
         } catch (error) {
             console.error(error);
             res.status(500).json({ message: 'Server Error' });
+        }
+    });
+
+    app.get('/products/:id' , async(req,res) => {
+        const id = req.params.id;
+        const query = {_id : new ObjectId(id)};
+        const result = await productCollection.findOne(query);
+        res.send(result);
+    });
+
+    app.post('/add-toy' , async(req,res) => {
+        const body = req.body;
+        const result = await productCollection.insertOne(body);
+        console.log(result)
+        if(result?.insertedId){
+            return res.status(200).send(result);
+        }else{
+            return res.status(404).send({
+                message: "can not insert try again leter",
+                status: false,
+            });
         }
     });
 
