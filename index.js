@@ -62,7 +62,6 @@ async function run() {
     app.post('/add-toy' , async(req,res) => {
         const body = req.body;
         const result = await productCollection.insertOne(body);
-        console.log(result)
         if(result?.insertedId){
             return res.status(200).send(result);
         }else{
@@ -71,6 +70,40 @@ async function run() {
                 status: false,
             });
         }
+    });
+
+    app.patch('/products/:id' , async(req,res) => {
+        const id = req.params.id;
+        const body = req.body;
+        const filter = {_id : new ObjectId(id)};
+        const options = { upsert: true };
+        const updateDoc = {
+            $set : {
+                toyName : body.toyName,
+                price : body.price,
+                imgUrl : body.imgUrl,
+                category : body.category,
+                reating: body.reating,
+                quantity : body.availableQuantity,
+                details : body.details
+            }
+        };
+        const result = await productCollection.updateOne(filter , updateDoc , options);
+        res.send(result);
+    });
+
+    app.delete('/products/:id' , async(req,res) => {
+        const id = req.params.id;
+        const query = {_id : new ObjectId(id)};
+        const result = await productCollection.deleteOne(query);
+        res.send(result);
+    });
+
+    app.get('/my-toys/:email' , async(req,res) => {
+        const email = req.params.email;
+        console.log(email)
+        const myToys = await productCollection.find({sellereEmail: email}).toArray();
+        res.send(myToys);
     });
 
     // Marvel Api:-
