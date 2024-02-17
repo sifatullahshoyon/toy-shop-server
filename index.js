@@ -65,6 +65,7 @@ async function run() {
             $or : [
                 {title : {$regex : text , $options : "i"}},
                 {category : {$regex : text , $options : "i"}}
+                
             ]
         }).toArray();
         res.send(result);
