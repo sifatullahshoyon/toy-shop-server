@@ -44,7 +44,7 @@ async function run() {
     // Product
     app.get('/products' , async(req,res) => {
         try {
-            const result = await productCollection.find().toArray();
+            const result = await productCollection.find().limit(20).toArray();
             res.send(result);
         } catch (error) {
             console.error(error);
@@ -56,6 +56,17 @@ async function run() {
         const id = req.params.id;
         const query = {_id : new ObjectId(id)};
         const result = await productCollection.findOne(query);
+        res.send(result);
+    });
+
+    app.get('/getToyByText/:text' , async(req,res) => {
+        const text = req.params.text;
+        const result = await productCollection.find({
+            $or : [
+                {title : {$regex : text , $options : "i"}},
+                {category : {$regex : text , $options : "i"}}
+            ]
+        }).toArray();
         res.send(result);
     });
 
