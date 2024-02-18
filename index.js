@@ -6,8 +6,19 @@ const port = process.env.PORT || 5000;
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 
 // middleware
-app.use(cors());
+const corsConfig = {
+    origin: '',
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE']
+}
+app.use(cors(corsConfig))
+app.options("", cors(corsConfig))
+// app.use(cors());
 app.use(express.json());
+
+app.get('/' , (req,res) => {
+    res.send('Toy Server is Running.');
+});
 
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.6khd2rb.mongodb.net/?retryWrites=true&w=majority`;
@@ -65,7 +76,7 @@ async function run() {
             $or : [
                 {title : {$regex : text , $options : "i"}},
                 {category : {$regex : text , $options : "i"}}
-                
+
             ]
         }).toArray();
         res.send(result);
